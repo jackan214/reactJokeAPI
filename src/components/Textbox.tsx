@@ -5,10 +5,12 @@ type Props = {
 };
 
 export function TextBox({ onJokeSubmission }: Props) {
+  console.log("onJokeSubmission:", onJokeSubmission);
+
   return (
     <Box
       sx={{
-        width: "70%",
+        width: "100%",
         margin: "0 auto",
         mt: 5,
         border: "1px solid gray",
@@ -16,10 +18,10 @@ export function TextBox({ onJokeSubmission }: Props) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "200px",
+        minHeight: "300px",
       }}
     >
-      <Typography variant="h6" component="h2" align="center">
+      <Typography variant="h6" component="h2" align="center" padding="10px 10px 10px 10px">
         {onJokeSubmission}
       </Typography>
     </Box>
