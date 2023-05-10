@@ -1,12 +1,12 @@
 import './App.css';
-import { Header2 } from './components/Header';
-import { Homescreen } from './components/Homescreen';
+import { HomeHeader } from './components/HomeHeader';
+import { HomeScreen } from './components/HomeScreen';
 
 function App() {
   return (
     <>
-      <Header2/>
-      <Homescreen/>
+      <HomeHeader/>
+      <HomeScreen/>
     </>
   );
 }

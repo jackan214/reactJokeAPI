@@ -1,9 +1,9 @@
 import { SetStateAction, useState } from "react";
 import { Container, Typography } from "@mui/material";
-import { Jokebuttons } from "./Jokebuttons";
-import { TextBox } from "./Textbox";
+import { Jokebuttons } from "./JokeButtons";
+import { TextBox } from "./TextBox";
 
-export function Homescreen() {
+export function HomeScreen() {
   const [selectedJoke, setSelectedJokeType] = useState<string>("");
 
   const handleButtonClick = (jokeType: SetStateAction<string>): void => {
@@ -20,7 +20,7 @@ export function Homescreen() {
   return (
     <Container maxWidth="sm">
       <Typography variant="h4" component="h1" align="center" paddingTop="30px">
-        What joke are you in the mood for?
+        What joke do you want to hear?
       </Typography>
       <Jokebuttons onButtonClick={handleButtonClick} />
       <TextBox onJokeSubmission={selectedJoke} />

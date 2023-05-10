@@ -31,7 +31,7 @@ export function Jokebuttons(props: { onButtonClick: (arg0: string) => void }) {
           color="primary"
           onClick={() => handleClick("Spooky")}
         >
-          spooky
+          Spooky
         </Button>
       </Grid>
     </Grid>

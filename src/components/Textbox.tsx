@@ -5,7 +5,6 @@ type Props = {
 };
 
 export function TextBox({ onJokeSubmission }: Props) {
-  console.log("onJokeSubmission:", onJokeSubmission);
 
   return (
     <Box
@@ -13,7 +12,7 @@ export function TextBox({ onJokeSubmission }: Props) {
         width: "100%",
         margin: "0 auto",
         mt: 5,
-        border: "1px solid gray",
+        border: "2px solid gray",
         borderRadius: "5px",
         display: "flex",
         justifyContent: "center",
